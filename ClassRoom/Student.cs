@@ -27,7 +27,26 @@ namespace ClassRoom
         {
 
             string strSeason;
+            //
+         
+            
+                try
+                {
+                if (BirthMonth > 12);
+                }
 
+                catch (IndexOutOfRangeException ex)
+                {
+                
+                Console.WriteLine("Please enter a month between 1 and 12");
+                 }
+                catch (Exception e)
+                {
+
+                Console.WriteLine("The content you have entered is invalid");
+                }
+               
+            
 
             if (BirthMonth == 12 || BirthMonth == 1 || BirthMonth == 2)
             {
@@ -51,7 +70,7 @@ namespace ClassRoom
             {
 
 
-                strSeason = "Unkown";
+                strSeason = "The month should be between 1 and 12";
             }
 
 
@@ -59,11 +78,7 @@ namespace ClassRoom
         }
 
 
-        //public static void MyMethod()
-        //{
-
-        //    throw new NotImplementedException();
-        //}
+        
         public static void CountBythMonthBySeason(List<Student> inClassMates)
 
         {
@@ -100,10 +115,10 @@ namespace ClassRoom
                        
                 }
             }
-            Console.WriteLine("In winter there is {0}" , intCountWinter);
-            Console.WriteLine("In spring there is {0}", intCountSpring);
-            Console.WriteLine("In summer there is {0}", intCountSummer);
-            Console.WriteLine("In autumn there is {0}", intCountAutumn);
+            Console.WriteLine("In winter there are {0} students who have a birthday" , intCountWinter);
+            Console.WriteLine("In spring there are {0} students who have a birthday", intCountSpring);
+            Console.WriteLine("In summer there are {0} students who have a birthday", intCountSummer);
+            Console.WriteLine("In autumn there are {0} students who have a birthday", intCountAutumn);
         }
 
 

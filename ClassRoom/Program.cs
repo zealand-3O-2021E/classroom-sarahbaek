@@ -32,7 +32,7 @@ namespace ClassRoom
 
             //Console.WriteLine(Student.Season(12));
             //Console.WriteLine(Student.Season(6));
-            //Console.WriteLine("You were born in {0}", Student.Season(12));
+            Console.WriteLine("You were born in {0}", Student.Season(12));
 
             Console.ReadLine();
         }
