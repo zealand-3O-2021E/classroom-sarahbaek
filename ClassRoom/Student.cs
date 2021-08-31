@@ -23,14 +23,39 @@ namespace ClassRoom
         public int BirthMonth { get => _birthMonth; set => _birthMonth = value; }
         public int Birthday { get => _birthday; set => _birthday = value; }
 
-        //public static string Season(int BirthDay)
-        //{
+        public static string Season(int BirthMonth)
+        {
+         
+            string strSeason;
+      
+         
+                if (BirthMonth == 12 || BirthMonth == 1 || BirthMonth == 2)
+                {
+                    strSeason = "Winter";
+                }
+                else if (BirthMonth == 3 || BirthMonth == 4 || BirthMonth == 5)
+                {
+                
+                    strSeason = "Spring";
+                }
+                else if (BirthMonth == 6 || BirthMonth == 7 || BirthMonth == 8)
+                {
+             
+                    strSeason = "Summer";
+                }
+                else if (BirthMonth == 9 || BirthMonth == 10 || BirthMonth == 11)
+                {
+                    strSeason = "Autumn";
+                }
+                else
+                {
+                
+                
+                    strSeason = "Unkown";
+               }
             
-        //    switch (switch_on)
-        //    {
-        //        default:
-        //    }
-        //    throw new NotImplementedException();
-        //}
+            
+            return strSeason;
+        }
     }
 }
