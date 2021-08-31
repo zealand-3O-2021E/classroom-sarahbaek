@@ -22,5 +22,15 @@ namespace ClassRoom
         public string Name { get => _name; set => _name = value; }
         public int BirthMonth { get => _birthMonth; set => _birthMonth = value; }
         public int Birthday { get => _birthday; set => _birthday = value; }
+
+        //public static string Season(int BirthDay)
+        //{
+            
+        //    switch (switch_on)
+        //    {
+        //        default:
+        //    }
+        //    throw new NotImplementedException();
+        //}
     }
 }
