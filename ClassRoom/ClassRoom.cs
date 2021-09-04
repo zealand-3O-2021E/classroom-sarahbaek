@@ -11,18 +11,25 @@ namespace ClassRoom
 {
     public class ClassRoom
     {
+        #region Fields
         private string _className;
         private List<Student> _classList;
         private DateTime _semesterStart;
+        #endregion
 
-        ////Default constructor
-        //public ClassRoom()
-        //{
+        #region Constructor
+        //Default constructor
+        public ClassRoom()
+        {
 
-        //}
+        }
+        #endregion
 
+        #region Properties
         public string ClassName { get => _className; set => _className = value; }
         public List<Student> ClassList { get => _classList; set => _classList = value; }
         public DateTime SemesterStart { get => _semesterStart; set => _semesterStart = value; }
+        #endregion
+
     }
 }
