@@ -103,8 +103,6 @@ namespace ClassRoom
             Console.WriteLine("You were born in {0}", Student.Season(12));
             #endregion
 
-
-
             Console.ReadLine();
         }
     }
