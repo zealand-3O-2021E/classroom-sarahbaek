@@ -36,6 +36,10 @@ namespace ClassRoom
 
             Console.WriteLine("The total number of students = {0} ", myClassMatesList.Count());
 
+           string seasonOfBirth = Student.Season2(12);
+            Console.WriteLine("Your birthday is during the - {0}",seasonOfBirth);
+
+
 
             //Student.CountBythMonthBySeason(myClassMates);
             ////Student.Season(12);
