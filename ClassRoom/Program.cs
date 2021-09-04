@@ -21,14 +21,20 @@ namespace ClassRoom
 
 
 
-            List<Student> myClassMates = new List<Student>();
+            List<Student> myClassMatesList = new List<Student>();
 
-            myClassMates.Add(myStudent);
-            myClassMates.Add(myStudent2);
-            myClassMates.Add(myStudent3);
-            myClassMates.Add(myStudent4);
+            myClassMatesList.Add(myStudent);
+            myClassMatesList.Add(myStudent2);
+            myClassMatesList.Add(myStudent3);
+            myClassMatesList.Add(myStudent4);
 
-            Console.WriteLine("The total number of students = {0} ", myClassMates.Count());
+            //Task 4. Print out the information on your classroom 
+            foreach (Student student in myClassMatesList)
+            {
+                Console.WriteLine("Name = {0} , BirthMonth = {1}, BirthDay = {2}", student.Name, student.BirthMonth, student.Birthday);
+            }
+
+            Console.WriteLine("The total number of students = {0} ", myClassMatesList.Count());
 
 
             //Student.CountBythMonthBySeason(myClassMates);

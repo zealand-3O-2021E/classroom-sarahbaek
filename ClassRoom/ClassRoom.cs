@@ -15,11 +15,11 @@ namespace ClassRoom
         private List<Student> _classList;
         private DateTime _semesterStart;
 
-        //Default constructor
-        public ClassRoom()
-        {
+        ////Default constructor
+        //public ClassRoom()
+        //{
 
-        }
+        //}
 
         public string ClassName { get => _className; set => _className = value; }
         public List<Student> ClassList { get => _classList; set => _classList = value; }
