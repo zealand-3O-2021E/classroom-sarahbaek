@@ -44,13 +44,13 @@ namespace ClassRoom
                 case 3:
                 case 4:
                 case 5:
-                    return strSeason="Spring";
+                    return strSeason = "Spring";
                     break;
 
                 case 6:
                 case 7:
                 case 8:
-                    return strSeason="Summer";
+                    return strSeason = "Summer";
                     break;
 
 
@@ -68,7 +68,7 @@ namespace ClassRoom
             }
 
             return strSeason;
-            
+
         }
 
         //public static string Season(int BirthMonth)
@@ -76,8 +76,8 @@ namespace ClassRoom
 
         //    string strSeason;
         //    //Incomplete Try Catch 
-         
-            
+
+
         //        try
         //        {
         //        if (BirthMonth > 12);
@@ -85,7 +85,7 @@ namespace ClassRoom
 
         //        catch (IndexOutOfRangeException ex)
         //        {
-                
+
         //        Console.WriteLine("Please enter a month between 1 and 12");
         //         }
         //        catch (Exception e)
@@ -93,8 +93,8 @@ namespace ClassRoom
 
         //        Console.WriteLine("The content you have entered is invalid");
         //        }
-               
-            
+
+
 
         //    if (BirthMonth == 12 || BirthMonth == 1 || BirthMonth == 2)
         //    {
@@ -126,7 +126,7 @@ namespace ClassRoom
         //}
 
 
-        
+
         //public static void CountBythMonthBySeason(List<Student> inClassMates)
 
         //{
@@ -160,7 +160,7 @@ namespace ClassRoom
         //                Console.WriteLine("balalala");
         //                break;
 
-                       
+
         //        }
         //    }
         //    Console.WriteLine("In winter there are {0} students who have a birthday" , intCountWinter);
@@ -170,5 +170,48 @@ namespace ClassRoom
         //}
 
 
+        public static void CountBythMonthBySeason(List<Student> inClassMates)
+
+        {
+            int intCountWinter = 0;
+            int intCountSpring = 0;
+            int intCountSummer = 0;
+            int intCountAutumn = 0;
+
+            foreach (var item in inClassMates)
+            {
+                switch (Student.Season2(item.BirthMonth))
+                {
+
+                    case "Winter":
+                        intCountWinter = intCountWinter + 1;
+                        break;
+                    case "Spring":
+                        intCountSpring++;
+                        break;
+                    case "Summer":
+                        intCountSummer++;
+
+                        break;
+
+                    case "Autumn":
+                        intCountAutumn++;
+
+                        break;
+
+                    default:
+                        Console.WriteLine("balalala");
+                        break;
+
+
+                }
+            }
+
+            Console.WriteLine("In winter there are {0} students who have a birthday", intCountWinter);
+            Console.WriteLine("In spring there are {0} students who have a birthday", intCountSpring);
+            Console.WriteLine("In summer there are {0} students who have a birthday", intCountSummer);
+            Console.WriteLine("In autumn there are {0} students who have a birthday", intCountAutumn);
+
+        }
     }
 }
